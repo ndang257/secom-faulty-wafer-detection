@@ -1,0 +1,113 @@
+{
+  "quick_run": false,
+  "cv_folds": 5,
+  "selected_pipeline": {
+    "outlier": "none",
+    "scaler": "robust",
+    "resampler": "rose"
+  },
+  "rf_params": {
+    "class_weight": "balanced",
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 100
+  },
+  "threshold": 0.54,
+  "cost_fp": 100,
+  "cost_fn": 400,
+  "n_selected_sensors": 15,
+  "test": {
+    "Flag nothing": {
+      "threshold": null,
+      "accuracy": 0.9331,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 21,
+      "tn": 293,
+      "cost": 8400.0
+    },
+    "Baseline (no resampling)": {
+      "threshold": 0.5,
+      "accuracy": 0.8153,
+      "precision": 0.1064,
+      "recall": 0.2381,
+      "specificity": 0.8567,
+      "f1": 0.1471,
+      "roc_auc": 0.7018,
+      "tp": 5,
+      "fp": 42,
+      "fn": 16,
+      "tn": 251,
+      "cost": 10600.0
+    },
+    "Selected pipeline (ROSE)": {
+      "threshold": 0.5,
+      "accuracy": 0.9236,
+      "precision": 0.3846,
+      "recall": 0.2381,
+      "specificity": 0.9727,
+      "f1": 0.2941,
+      "roc_auc": 0.665,
+      "tp": 5,
+      "fp": 8,
+      "fn": 16,
+      "tn": 285,
+      "cost": 7200.0
+    },
+    "Tuned": {
+      "threshold": 0.5,
+      "accuracy": 0.9204,
+      "precision": 0.375,
+      "recall": 0.2857,
+      "specificity": 0.9659,
+      "f1": 0.3243,
+      "roc_auc": 0.6953,
+      "tp": 6,
+      "fp": 10,
+      "fn": 15,
+      "tn": 283,
+      "cost": 7000.0
+    },
+    "Tuned + cost threshold": {
+      "threshold": 0.54,
+      "accuracy": 0.9299,
+      "precision": 0.4545,
+      "recall": 0.2381,
+      "specificity": 0.9795,
+      "f1": 0.3125,
+      "roc_auc": 0.6953,
+      "tp": 5,
+      "fp": 6,
+      "fn": 16,
+      "tn": 287,
+      "cost": 7000.0
+    }
+  },
+  "test_ci_95": {
+    "recall": {
+      "ci_low": 0.0768,
+      "ci_high": 0.44
+    },
+    "precision": {
+      "ci_low": 0.1667,
+      "ci_high": 0.7778
+    },
+    "f1": {
+      "ci_low": 0.1,
+      "ci_high": 0.5129
+    },
+    "roc_auc": {
+      "ci_low": 0.5739,
+      "ci_high": 0.8128
+    },
+    "cost": {
+      "ci_low": 4000.0,
+      "ci_high": 10400.0
+    }
+  }
+}
