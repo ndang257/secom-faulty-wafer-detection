@@ -1,6 +1,6 @@
 # Predicting Defective Semiconductor Wafers (UCI SECOM)
 
-[![CI](https://github.com/<ndang257>/secom-faulty-wafer-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/<ndang257>/secom-faulty-wafer-detection/actions/workflows/ci.yml)
+[![CI](https://github.com/ndang257/secom-faulty-wafer-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/ndang257/secom-faulty-wafer-detection/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -86,7 +86,7 @@ modelling ideas stayed the same; what changed was how honestly they were measure
 ## How to run
 
 ```bash
-git clone https://github.com/<ndang257>/secom-faulty-wafer-detection.git
+git clone https://github.com/ndang257/secom-faulty-wafer-detection.git
 cd secom-faulty-wafer-detection
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -e ".[dev]"
